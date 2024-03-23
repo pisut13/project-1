@@ -1,0 +1,21 @@
+Interface:
+
+    TextInput:
+        id              : metin_giris
+        multiline       : False
+        size_hint       : 0.5, 0.1
+        pos_hint        : {"center_x": 0.5, "center_y": 0.6}
+        hint_text       : "Yaz bakam bişeyler.."
+#        on_text_validate: root.display_info()
+
+    Label:
+        id              : etiket
+        text            : "Yok daha bişeyler burda.."
+        size_hint       : 0.5, 0.1
+        pos_hint        : {"center_x": 0.5, "center_y": 0.5}
+
+    Button:
+        text            : "Click Me!"
+        size_hint       : 0.5, 0.1
+        pos_hint        : {"center_x": 0.5, "center_y": 0.4}
+        on_press        : root.display_info()
